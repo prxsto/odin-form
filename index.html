@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" type="text/css" href="/src/style.css" />
   <title>Odin Form</title>
 </head>
 
@@ -25,30 +25,37 @@
       </h1>
       <h1>You <em>know</em> you want to.</h1>
     </section>
-    <section class="form-container"></section>
-    <h1>Let's do this!</h1>
-    <form id="login-form" action="" method="set">
-      <label for="first-name">
-        FIRST NAME<input type="text" id="first-name" name="first-name" minlength="1" maxlength="30">
-      </label>
-      <label for="last-name">
-        LAST NAME<input type="text" id="last-name" name="last-name" minlength="1" maxlength="30">
-      </label>
-      <label for="email">
-        EMAIL<input type="email" id="email" name="email">
-      </label>
-      <label for="phone">
-        PHONE NUMBER<input type="tel" id="phone" name="phone">
-      </label>
-      <label for="password">
-        PASSWORD<input type="password" id="password" name="password">
-      </label>
-      <label for="confirm-password">
-        CONFIRM PASSWORD<input type="password" id="confirm-password" name="confirm-password">
-      </label>
-    </form>
+    <section class="form-container">
+      <h1>Let's do this!</h1>
+      <form id="login-form" action="" method="set">
+        <div class="input-wrapper">
+          <label for="first-name">FIRST NAME </label>
+          <input type="text" id="first-name" name="first-name" minlength="1" maxlength="30">
+        </div>
+        <div class="input-wrapper">
+          <label for="last-name">LAST NAME </label>
+          <input type="text" id="last-name" name="last-name" minlength="1" maxlength="30">
+        </div>
+        <div class="input-wrapper">
+          <label for="email">EMAIL </label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="input-wrapper">
+          <label for="phone">PHONE NUMBER </label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="input-wrapper">
+          <label for="password">PASSWORD </label>
+          <input type="password" id="password" name="password">
+        </div>
+        <div class="input-wrapper">
+          <label for="confirm-password">CONFIRM PASSWORD </label>
+          <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+      </form>
+    </section>
     <section class="login">
-      <button id="form-button">Create Account</button>
+      <button type="submit" id="form-button">Create Account</button>
       <p>Already have an account? <a href="">Log in</a></p>
     </section>
   </main>

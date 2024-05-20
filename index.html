@@ -1,13 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Odin Form</title>
-  </head>
-  <body>
-    <h1>Odin Form</h1>
-    <script src="main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <title>Odin Form</title>
+</head>
+
+<body>
+  <aside>
+    <div class="logo-box">
+      <img src="/odin-logo.png" alt="logo of viking dude">
+      <h1>ODIN</h1>
+    </div>
+    <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a
+        href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+  </aside>
+  <main>
+    <section class="blurb">
+      <h1>
+        This is not a real online service! You know you need something like this in your life to help you realize your
+        deepest dreams. Sign up <em>now</em> to get started.
+      </h1>
+      <h1>You <em>know</em> you want to.</h1>
+    </section>
+    <section class="form-container"></section>
+    <h1>Let's do this!</h1>
+    <form id="login-form" action="" method="set">
+      <label for="first-name">
+        FIRST NAME<input type="text" id="first-name" name="first-name" minlength="1" maxlength="30">
+      </label>
+      <label for="last-name">
+        LAST NAME<input type="text" id="last-name" name="last-name" minlength="1" maxlength="30">
+      </label>
+      <label for="email">
+        EMAIL<input type="email" id="email" name="email">
+      </label>
+      <label for="phone">
+        PHONE NUMBER<input type="tel" id="phone" name="phone">
+      </label>
+      <label for="password">
+        PASSWORD<input type="password" id="password" name="password">
+      </label>
+      <label for="confirm-password">
+        CONFIRM PASSWORD<input type="password" id="confirm-password" name="confirm-password">
+      </label>
+    </form>
+    <section class="login">
+      <button id="form-button">Create Account</button>
+      <p>Already have an account? <a href="">Log in</a></p>
+    </section>
+  </main>
+  <script src="/src/main.ts"></script>
+</body>
+
 </html>
